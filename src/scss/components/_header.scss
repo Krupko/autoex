@@ -1,0 +1,100 @@
+/* ? ======= header start ======= */
+.header {
+   width: 100%;
+   height: 130px;
+   background-color: var(--color-azure);
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   &__flex {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+
+   &__logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      img {
+         margin-bottom: 5px;
+      }
+   }
+
+   &__logo-text {
+      width: 160px;
+      margin-left: 13px;
+
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--color-white);
+   }
+
+   &__menu {
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+   }
+
+   &__item {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: var(--color-white);
+      transition: 0.5s;
+
+      &:hover {
+         color: var(--color-keppel);
+         transition: 0.5s;
+      }
+   }
+
+   &__phone {
+      height: 40px;
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: var(--color-white);
+      transition: 0.5s;
+
+      &:hover {
+         color: var(--color-keppel);
+         transition: 0.5s;
+      }
+   }
+
+   &__phone {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 10px;
+   }
+
+   &__phone-svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+
+      use {
+         fill: var(--color-white);
+         transition: 0.5s;
+      }
+
+      &:hover use {
+         fill: var(--color-keppel);
+         transition: 0.5s;
+      }
+   }
+}
