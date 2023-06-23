@@ -11,6 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tabs */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_tabs__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),
@@ -162,6 +165,34 @@ const burger = document.querySelector(".header__burger"),
 burger.addEventListener("click", () => {
   burger.classList.toggle('js-burger--active'), menu.classList.toggle('js-menu--active');
 });
+
+/***/ }),
+
+/***/ "./src/js/components/tabs.js":
+/*!***********************************!*\
+  !*** ./src/js/components/tabs.js ***!
+  \***********************************/
+/***/ (() => {
+
+/*! ======= tabs start ======= */
+const tabNav = document.querySelectorAll("[data-tab]"),
+  contentTab = document.querySelectorAll(".tabs__body");
+tabNav.forEach(item => {
+  item.addEventListener("click", () => {
+    const tabAtribut = item.dataset.tab,
+      tabContent = document.querySelector("." + tabAtribut);
+    tabNav.forEach(item => {
+      item.classList.remove('tabs__item--color');
+    });
+    contentTab.forEach(item => {
+      item.classList.remove('tabs__body-active');
+    });
+    tabContent.classList.add('tabs__body-active');
+    item.classList.add('tabs__item--color');
+  });
+});
+
+// console.log(contentTab);
 
 /***/ }),
 
