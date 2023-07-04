@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -22,8 +22,8 @@
   <script defer src="js/main.js"></script>
 </head>
 
-  <body class="page__body">
-    <!-- ? ======= header start ======= -->
+<body class="page__body">
+  <!-- ? ======= header start ======= -->
 <header class="header">
   <div class="header__flex container">
     <div class="header__logo">
@@ -59,8 +59,8 @@
   </div>
 </header>
 
-    <main class="main">
-      <!-- ? ======= hero start ======= -->
+  <main class="main">
+    <!-- ? ======= hero start ======= -->
 
 <section class="hero">
   <div class="container hero__container">
@@ -91,7 +91,7 @@
   </div>
 </section>
 
-      <!-- ? ======= tabs start ======= -->
+    <!-- ? ======= tabs start ======= -->
 <div class="tabs">
   <div class="tabs__container container">
     <ul class="tabs__list-header list-reset">
@@ -184,11 +184,11 @@
   </div>
 </div>
 
-      <!-- ? ======= about start ======= -->
+    <!-- ? ======= about start ======= -->
 <section class="about">
   <video class="about__video" autoplay loop>
-    <source src="service3.mp4" type="video/mp4;" />
     <source src="service3.webm" type="video/webm" />
+    <source src="service3.mp4" type="video/mp4" />
   </video>
 
   <div class="about__container container">
@@ -223,6 +223,250 @@
   </div>
 </section>
 
-    </main>
-  </body>
+    <!-- ? ======= services start ======= -->
+<section class="services">
+  <div class="services__container container">
+    <h2 class="services__title">Наши услуги</h2>
+
+    <ul class="services__list">
+      <li class="services__item">
+        Выезд по указанному адресу для проведения осмотра
+      </li>
+      <li class="services__item">
+        Полная видео и аудио фиксация всего процесса осмотра
+      </li>
+      <li class="services__item">
+        Исследование для определения критического износа деталей
+        и агрегатов
+      </li>
+      <li class="services__item">
+        Компьютерная или инструментальная диагностика
+      </li>
+      <li class="services__item">
+        Исследование технических жидкостей (топливо, масла, антифриз
+        и т. д.)
+      </li>
+      <li class="services__item">
+        Металловедческое исследование деталей транспортных средств
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!-- ? ======= benefits start ======= -->
+<section class="benefits">
+  <div class="benefits__container container">
+    <section class="benefits__left">
+      <h2 class="benefits__title">
+        Наши<br />
+        преимущества
+      </h2>
+
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          Консультация при первом обращении бесплатно
+        </li>
+        <li class="benefits__item">Фото и видео фиксация</li>
+        <li class="benefits__item">
+          Привлечение ведущих лабораторий Екатеринбурга и Москвы
+        </li>
+        <li class="benefits__item">Штатный авто юрист</li>
+        <li class="benefits__item">
+          При наличии договора выезд специалиста в течении суток
+        </li>
+      </ul>
+    </section>
+
+    <div class="benefits__right">
+      <!-- Slider main container -->
+      <div class="benefits__swiper swiper">
+        <!-- Additional required wrapper -->
+        <div class="benefits__wrap swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <div class="benefits__slide">
+              <div class="benefits__image">
+                <picture>
+                  <source srcset="img/slide1.1.webp" type="img/webp" />
+                  <img class="benefits__pic" src="img/slide1.1.jpeg" alt="Обман в сервисе" />
+                </picture>
+              </div>
+
+              <p class="benefits__slide-text">
+                После ремонта в сервисе, появилось подозрение, что обманули… Обратился в экспертизу, ребята
+                все сделали быстро, с заключением пришел в сервис. Все пересчитали и вернули разницу.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="benefits__slide">
+              <div class="benefits__image">
+                <picture>
+                  <source srcset="img/slide1.2.webp" type="img/webp" />
+                  <img class="benefits__pic" src="img/slide1.2.jpg" alt="Обман в сервисе" />
+                </picture>
+              </div>
+
+              <p class="benefits__slide-text">
+                Все сделали, по красоте. Салон весь ремонт по гарантии сделал за свой счет.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="benefits__slide">
+              <div class="benefits__image">
+                <picture>
+                  <source srcset="img/slide1.4.webp" type="img/webp" />
+                  <img class="benefits__pic" src="img/slide1.4.jpeg" alt="Обман в сервисе" />
+                </picture>
+              </div>
+
+              <p class="benefits__slide-text">
+                Хорошо, что друзяь надоумили проверить смету ремонта. Не хило нас так в сервисах конечно
+                обирают. И вроде все законно, если не разбираешься что к чему
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits__wrapper-navigation">
+        <!-- If we need navigation buttons prev -->
+        <div class="benefits__prev swiper-button-prev benefits__swiper-button"></div>
+        <!-- If we need pagination -->
+        <div class="benefits__pagination swiper-pagination"></div>
+        <!-- If we need navigation buttons next -->
+        <div class="benefits__next swiper-button-next benefits__swiper-button"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- ? ======= contact start ======= -->
+<section class="contact">
+  <div class="contact__left">
+    <h3 class="contact__title">
+      Оставьте заявку на <br>бесплатную консультацию
+    </h3>
+
+    <form class="contact__form" action="">
+      <label class="contact__label">
+        <input class="contact__input input-reset" type="text" placeholder="Имя">
+      </label>
+
+      <label class="contact__label">
+        <input class="contact__input input-reset" type="tel" placeholder="Телефон">
+      </label>
+
+      <label class="contact__label">
+        <input class="contact__input input-reset" type="email" placeholder="Email">
+      </label>
+
+      <p class="contact__agremeent">
+        Нажимая кнопку ‘Отправить’ вы соглашаетесь с политикой конфиденциальности
+      </p>
+
+      <label class="contact__label">
+        <input class="contact__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+      </label>
+    </form>
+  </div>
+
+  <div class="contact__right">
+
+    <div class="contact__map">
+      <div class="contact__map-wrap" style="position:relative;overflow:hidden;"><a
+          href="https://yandex.ru/maps/54/yekaterinburg/?utm_medium=mapframe&utm_source=maps"
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">
+          Екатеринбург
+        </a>
+        <a href="https://yandex.ru/maps/54/yekaterinburg/house/sirenevy_bulvar_11/YkkYcA9mTkQEQFtsfXRycXtlbA==/?ll=60.686713%2C56.830768&utm_medium=mapframe&utm_source=maps&z=17"
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Сиреневый бульвар, 11 — Яндекс Карты
+        </a>
+        <iframe class="contact__iframe"
+          src="https://yandex.ru/map-widget/v1/?ll=60.686713%2C56.830768&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjA4NDM5OBJ20KDQvtGB0YHQuNGPLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0KHQuNGA0LXQvdC10LLRi9C5INCx0YPQu9GM0LLQsNGALCAxMSIKDTK_ckIVtVJjQg%2C%2C&z=17"
+          width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- width="560" height="400"  -->
+    <!-- ? ======= footer start ======= -->
+<section class="footer">
+   <div class="footer__container container">
+
+      <div class="footer__logo">
+         <img src="img/logo.svg" alt="logo" />
+         <div class="footer__logo-text">Авто-техническая экспертиза</div>
+      </div>
+
+      <menu class="footer__menu list-reset">
+         <li class="footer__item">
+            <a href="#" class="footer__link">О нас</a>
+         </li>
+
+         <li class="footer__item">
+            <a href="#" class="footer__link">Наши услуги</a>
+         </li>
+
+         <li class="footer__item">
+            <a href="#" class="footer__link">Наши преимущества</a>
+         </li>
+
+         <li class="footer__item">
+            <a href="#" class="footer__link">Отзывы</a>
+         </li>
+      </menu>
+
+      <ul class="footer__nav list-reset">
+         <li class="footer__contact">
+            <a class="footer__phone footer__link-svg" href="tel:+79028770518">
+               <svg class="header__phone-svg footer__svg">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+               </svg>
+               <span>+7 902 877-05-18</span>
+            </a>
+         </li>
+
+         <li class="footer__contact">
+            <a class="footer__email footer__link-svg" href="tmail:expertizapro96@yandex.ru">
+               <svg class="footer__email-svg footer__svg">
+                  <use xlink:href="img/sprite.svg#email"></use>
+               </svg>
+               <span>expertizapro96@yandex.ru</span>
+            </a>
+         </li>
+
+         <li class="footer__contact">
+            <a class="footer__location footer__link-svg" href="#">
+               <svg class="footer__location-svg footer__svg">
+                  <use xlink:href="img/sprite.svg#location"></use>
+               </svg>
+               <span>Екатеринбург, Сиреневый бульвар, 11</span>
+            </a>
+         </li>
+
+         <li class="footer__contact">
+            <a class="footer__kwork footer__link-svg" href="#">
+               <svg class="footer__kwork-svg footer__svg">
+                  <use xlink:href="img/sprite.svg#kwork"></use>
+               </svg>
+               <span>пон — пят: 9:00 — 18:00</span>
+            </a>
+         </li>
+      </ul>
+
+   </div>
+   <span class="footer__copyright">
+      Copyright © 2023 Разработка сайтов @igor_k007
+   </span>
+</section>
+  </main>
+</body>
+
 </html>
