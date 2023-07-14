@@ -17,8 +17,12 @@
   <link rel="preload" href="fonts/Ubuntu-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/OdibeeSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -26,23 +30,23 @@
   <!-- ? ======= header start ======= -->
 <header class="header">
   <div class="header__flex container">
-    <div class="header__logo">
+    <div class="header__logo" name="logo">
       <img src="img/logo.svg" alt="logo" />
       <div class="header__logo-text">Авто-техническая экспертиза</div>
     </div>
 
     <menu class="header__menu list-reset">
       <li class="header__item">
-        <a href="#" class="header__link">О нас</a>
+        <a href="#about" class="header__link">О нас</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Наши услуги</a>
+        <a href="#services" class="header__link">Наши услуги</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Наши преимущества</a>
+        <a href="#advantages" class="header__link">Наши преимущества</a>
       </li>
       <li class="header__item">
-        <a href="#" class="header__link">Отзывы</a>
+        <a href="#testimonials" class="header__link">Отзывы</a>
       </li>
     </menu>
 
@@ -66,7 +70,7 @@
   <div class="container hero__container">
     <div class="hero__content">
       <section class="hero__content-left">
-        <h1 class="hero__title title">
+        <h1 class="hero__title title" data-aos="flip-right">
           Авто — техническая экспертиза
         </h1>
         <div class="hero__subtitle subtitle">
@@ -87,10 +91,9 @@
       </div>
     </div>
 
-    <button class="hero__btn btn">заказать экспертизу</button>
+    <button class="hero__btn btn js-btn-popups">заказать экспертизу</button>
   </div>
 </section>
-
     <!-- ? ======= tabs start ======= -->
 <div class="tabs">
   <div class="tabs__container container">
@@ -114,20 +117,20 @@
       </picture>
 
       <section class="tabs__content">
-        <h2 class="tabs__title">обман в сервисе</h2>
+        <h2 class="tabs__title" data-aos="fade-left">обман в сервисе</h2>
         <p class="tabs__text">
           в сервисе вам хотят заменить агрегаты которые еще не требуют
           замены, чтобы стоимость работ стала выше, а в идеале
           предлагают и сами агрегаты купить у них
         </p>
 
-        <button class="tabs__btn btn">заказать экспертизу</button>
+        <button class="tabs__btn btn js-btn-popups">заказать экспертизу</button>
       </section>
     </div>
 
     <div class="tabs__body tab2">
       <section class="tabs__content tabs__content--left">
-        <h2 class="tabs__title">обман в сервисе</h2>
+        <h2 class="tabs__title" data-aos="fade-right">обман в расчетах</h2>
         <p class="tabs__text tabs__text--left">
           сервис выставил счет за выполненные работы, и у вас
           есть подозрение, что некоторые работы указанные в нем проведены
@@ -135,7 +138,7 @@
           согласования проведены работы которые не требовалось проводить
         </p>
 
-        <button class="tabs__btn btn">заказать экспертизу</button>
+        <button class="tabs__btn btn js-btn-popups">заказать экспертизу</button>
       </section>
 
       <picture class="tabs__picture">
@@ -151,7 +154,7 @@
       </picture>
 
       <section class="tabs__content">
-        <h2 class="tabs__title">
+        <h2 class="tabs__title" data-aos="fade-left">
           установили<br />
           не качественные детали
         </h2>
@@ -160,20 +163,20 @@
           агрегаты или вместо согласованных оригинальных установили реплики
         </p>
 
-        <button class="tabs__btn btn">заказать экспертизу</button>
+        <button class="tabs__btn btn js-btn-popups">заказать экспертизу</button>
       </section>
     </div>
 
     <div class="tabs__body tab4">
       <section class="tabs__content tabs__content--left">
-        <h2 class="tabs__title">обман в сервисе</h2>
+        <h2 class="tabs__title" data-aos="fade-right">отказ по гарантии</h2>
         <p class="tabs__text tabs__text--left">
           вы обратились в салон по гарантии, но салон
           отказывает, ссылаясь на использование некачественного топлива,
           расходников, либо неправильную эксплуатацию
         </p>
 
-        <button class="tabs__btn btn">заказать экспертизу</button>
+        <button class="tabs__btn btn js-btn-popups">заказать экспертизу</button>
       </section>
 
       <picture class="tabs__picture">
@@ -183,9 +186,8 @@
     </div>
   </div>
 </div>
-
     <!-- ? ======= about start ======= -->
-<section class="about">
+<section class="about" id="about">
   <video class="about__video" autoplay loop>
     <source src="service3.webm" type="video/webm" />
     <source src="service3.mp4" type="video/mp4" />
@@ -193,7 +195,7 @@
 
   <div class="about__container container">
     <section class="about__left">
-      <h2 class="about__title">О нас</h2>
+      <h2 class="about__title" data-aos="fade-right">О нас</h2>
 
       <p class="about__text">
         Мы предоставляем услуги авто-технической экспертизы более десяти
@@ -207,7 +209,7 @@
     </section>
 
     <section class="about__right">
-      <h2 class="about__title about__title--right">Мы<br class="about__400"> гарантируем</h2>
+      <h2 class="about__title about__title--right" data-aos="fade-left">Мы<br class="about__400"> гарантируем</h2>
 
       <ul class="about__list about__text">
         <li class="about__item">профессиональное и всесторонне исследование</li>
@@ -222,11 +224,10 @@
     </section>
   </div>
 </section>
-
     <!-- ? ======= services start ======= -->
-<section class="services">
+<section class="services" id="services">
   <div class="services__container container">
-    <h2 class="services__title">Наши услуги</h2>
+    <h2 class="services__title" data-aos="fade-up-right">Наши услуги</h2>
 
     <ul class="services__list">
       <li class="services__item">
@@ -252,12 +253,11 @@
     </ul>
   </div>
 </section>
-
     <!-- ? ======= benefits start ======= -->
-<section class="benefits">
+<section class="benefits" id="advantages">
   <div class="benefits__container container">
     <section class="benefits__left">
-      <h2 class="benefits__title">
+      <h2 class="benefits__title benefits__title--left">
         Наши<br />
         преимущества
       </h2>
@@ -277,7 +277,8 @@
       </ul>
     </section>
 
-    <div class="benefits__right">
+    <div class="benefits__right" id="testimonials">
+      <h2 class="benefits__title benefits__title--right">Отзывы благодарных клиентов</h2>
       <!-- Slider main container -->
       <div class="benefits__swiper swiper">
         <!-- Additional required wrapper -->
@@ -352,17 +353,19 @@
       Оставьте заявку на <br>бесплатную консультацию
     </h3>
 
-    <form class="contact__form" action="">
+    <form class="contact__form form" action="">
       <label class="contact__label">
-        <input class="contact__input input-reset" type="text" placeholder="Имя">
+        <input class="contact__input input-reset form__input form-control name" type="text" name="name"
+          autocomplete="off" placeholder="Имя">
       </label>
 
       <label class="contact__label">
-        <input class="contact__input input-reset" type="tel" placeholder="Телефон">
+        <input value class="contact__input input-reset tel" type="tel" name="telephone" placeholder="Телефон">
       </label>
 
       <label class="contact__label">
-        <input class="contact__input input-reset" type="email" placeholder="Email">
+        <input type="email" class="contact__input input-reset form__input form-control email" placeholder="Email"
+          autocomplete="off" name="email">
       </label>
 
       <p class="contact__agremeent">
@@ -370,7 +373,7 @@
       </p>
 
       <label class="contact__label">
-        <input class="contact__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+        <input class="contact__button btn btn-primary" id="submit-btn" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
       </label>
     </form>
   </div>
@@ -396,7 +399,8 @@
 </section>
 
 <!-- width="560" height="400"  -->
-    <!-- ? ======= footer start ======= -->
+  </main>
+  <!-- ? ======= footer start ======= -->
 <section class="footer">
    <div class="footer__container container">
 
@@ -407,19 +411,19 @@
 
       <menu class="footer__menu list-reset">
          <li class="footer__item">
-            <a href="#" class="footer__link">О нас</a>
+            <a href="#about" class="footer__link">О нас</a>
          </li>
 
          <li class="footer__item">
-            <a href="#" class="footer__link">Наши услуги</a>
+            <a href="#services" class="footer__link">Наши услуги</a>
          </li>
 
          <li class="footer__item">
-            <a href="#" class="footer__link">Наши преимущества</a>
+            <a href="#advantages" class="footer__link">Наши преимущества</a>
          </li>
 
          <li class="footer__item">
-            <a href="#" class="footer__link">Отзывы</a>
+            <a href="#testimonials" class="footer__link">Отзывы</a>
          </li>
       </menu>
 
@@ -466,7 +470,38 @@
       Copyright © 2023 Разработка сайтов @igor_k007
    </span>
 </section>
-  </main>
+  <!-- ? ======= popups start ======= -->
+<div class="popups">
+   <div class="popups__wrapper">
+      <h3 class="popups__title">
+         Оставьте заявку на <br>бесплатную консультацию
+      </h3>
+
+      <form class="popups__form form" action="">
+         <label class="popups__label">
+            <input class="popups__input input-reset form__input form-control name" type="text" name="name"
+               autocomplete="off" placeholder="Имя">
+         </label>
+
+         <label class="popups__label">
+            <input value class="popups__input input-reset tel" type="tel" name="tel" placeholder="Телефон">
+         </label>
+
+         <label class="popups__label">
+            <input class="popups__input input-reset form__input form-control email" type="email" name="email"
+               autocomplite="off" placeholder="Email">
+         </label>
+
+         <p class="popups__agremeent">
+            Нажимая кнопку ‘Отправить’ вы соглашаетесь с политикой конфиденциальности
+         </p>
+
+         <label class="popups__label">
+            <input class="popups__button btn btn-primary" id="submit-btn" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+         </label>
+      </form>
+   </div>
+</div>
 </body>
 
 </html>
