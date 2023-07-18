@@ -1306,7 +1306,6 @@ a {
 .contact__left {
   width: 50%;
   padding-top: clamp(1.875rem, 0.714rem + 5.8vw, 5.938rem);
-  padding-bottom: clamp(1.875rem, 1.411rem + 2.32vw, 3.5rem);
   padding-left: clamp(0rem, -2.5rem + 12.5vw, 8.75rem);
   padding-right: clamp(0rem, -1.429rem + 7.14vw, 5rem);
   background-color: var(--color-azure);
@@ -1331,11 +1330,11 @@ a {
   background-color: var(--color-azure);
 }
 .contact__map-wrap {
-  height: 100%;
+  height: 95vh;
 }
 .contact__iframe {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: block;
   border: none;
 }
@@ -1461,8 +1460,9 @@ a {
   }
   .contact__left {
     width: 65%;
+    padding-bottom: clamp(1.875rem, 1.411rem + 2.32vw, 3.5rem);
   }
-  .contact__iframe {
+  .contact__map-wrap {
     height: 50vh;
   }
 }
